@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Privacy</title>
+    <link rel="stylesheet" href="privacy.css">
+</head>
+<body>
+    <!-- HEADER OF THE PAGE -->
+    <header>
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <img src="./icons/e1.png" width="70px" alt="Logo">
+            </div>
+
+            <ul class="navbar-items">
+                <li><a href="D:\portfolio\index.html">Home</a></li>
+                <!-- <li class="center"><a href="#">Work</a></li> -->
+                <li><a href="./project.html">Projects</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+
+            <div class="search-bar">
+                <img src="./icons/e3.png" alt="">
+                <input type="search" placeholder="Find here">
+            </div>
+
+            <a href="#" class="action_btn">Book a Project</a>
+
+            <div class="menu-btn">
+                <i class="fa-soid fa-bars"><img src="./icons/e2.png" alt="" width="40px"></i>
+            </div>
+        </nav>
+
+
+        <nav class="dropdown_menu">
+            <ul class="navbar-items">
+                <li><a href="#">Home</a></li>
+                <!-- <li><a href="#">Work</a></li>               -->
+                <li><a href="./project.html">Projects</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="#" class="action_btn">Book a Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- END HEADER -->
+
+
+
+
+    <!-- MAIN OF PAGE -->
+    <main>
+        <div class="privacy_main">    
+            
+            
+            <legend><img src="./icons/e24.png" alt="privacy icon"></legend>
+
+                <div class="design_privacy">
+
+                    <div class="design_child1">
+                        <h1>PRIVACY BY DESIGN</h1>
+                        <ul id="design_list">
+                            <li>Implementing approriate technical and organisational measures to protect user's data.</li>
+                            <li>Integrate data privacy and security safeguards to protect user's rights.</li>
+                        </ul>
+
+                        <div class="design_child3">
+                            <img src="./icons/e25.png" alt="privacy logo">
+                        </div>
+                        <div class="sub_child">
+                            <p id="para1">When to implement</p>
+                            <p id="para2">During the design phase of processing activity</p>
+                        </div>
+                    </div>
+
+
+                    <div class="design_child2">
+                        <img src="./icons/e25.png" alt="privacy logo">
+                    </div>
+                </div>
+                
+                <hr>
+
+
+
+
+
+                <div class="default_privacy">
+
+                    <div class="design_child2">
+                        <img src="./icons/e26.png" alt="privacy logo">
+                    </div>
+
+                    <div class="design_child1">
+                        <h1>PRIVACY BY DEFAULT</h1>
+                        <ul id="design_list">
+                            <li>Enabling privacy-friendly settings when processing personal data</li>
+                            <li>Ensure dat minimization and processing achieve specified and lawful purposes only</li>
+                        </ul>
+    
+                        <div class="design_child3">
+                            <img src="./icons/e25.png" alt="privacy logo">
+                        </div>
+                        <div class="sub_child">
+                            <p id="para1">When to implement</p>
+                            <p id="para2">During the lifecycle of any processing activity</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="privacy_empty"></div>
+
+            
+        </div>
+
+        <div class="privacy_desn">
+            <p id="para4">Both <a href="#design_privacy">Privacy by Design</a> and <a href="#default_privacy">Privacy by Default</a> are approaches that call for integrating privacy and data protection into a business's processing activities and practices, right from the design stage through its entire lifecycle.</p>
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+
+
+          <!-- FOOTER -->
+          <footer>
+            <div class="footer-panel panel1">
+              <div class="panel1-item1">
+                <h2>Products</h2>
+                <p id="wd-a"><a href="#">Website Designs</a></p>          
+                <p><a href="#">website Developer</a></p>       
+                <p><a href="#">website Templates</a></p>
+              </div>
+    
+              <div class="panel1-item1">
+            <h2>Get in touch</h2>
+                <p id="wd-a"><a href="./about.html">About me</a></p>          
+                <p><a href="./assest/contact.html">Contact me</a></p>       
+              </div>
+            </div>
+            <div class="footer-panel panel2">
+              <p>&COPY; copyright, MR Designs 2024-Now, Inc.</p>
+              <div class="panel2-links">
+                <a href="#" id="panel2-a">Your Privacy</a>
+                <a href="#" id="panel2-a">Your Policy</a>
+              </div>
+            </div>
+          </footer>
+          <!-- END FOOTER -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+
+const toggleBtn = document.querySelector('.menu-btn');
+const toggleBtnIcon = document.querySelector('.menu-btn i');
+const dropDownMenu = document.querySelector('.dropdown_menu');
+
+toggleBtn.onclick = function () {
+dropDownMenu.classList.toggle('open');
+const isOpen = dropDownMenu.classList.contains('open');
+
+toggleBtnIcon.classList = isOpen
+? 'fa-soid fa-xmark'
+: 'fa-soid fa-bars'
+}
+
+
+    </script>
+</body>
+</html>

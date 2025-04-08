@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <link rel="stylesheet" href="./about.css">
+</head>
+<body>
+     <!-- HEADER OF THE PAGE -->
+     <header>
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <img src="./icons/e1.png" width="70px" alt="">
+            </div>
+
+            <ul class="navbar-items">
+                <li><a href="D:\portfolio\index.html">Home</a></li>
+                <!-- <li><a href="#">Work</a></li> -->
+                <li><a href="./project.html">Projects</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+
+            <div class="search-bar">
+                <img src="./icons/e3.png" alt="">
+                <input type="search" placeholder="Find here">
+            </div>
+
+            <a href="#" class="action_btn">Book a Project</a>
+
+            <div class="menu-btn">
+                <i class="fa-soid fa-bars"><img src="./icons/e2.png" alt="" width="40px"></i>
+            </div>
+        </nav>
+
+
+        <nav class="dropdown_menu">
+            <ul class="navbar-items">
+                <li><a href="D:\portfolio\index.html">Home</a></li>
+                <!-- <li><a href="#">Work</a></li>               -->
+                <li><a href="./project.html">Projects</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="#" class="action_btn">Book a Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- END HEADER -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <main>
+
+        <div class="info_container">
+
+            <div class="info_child info_child1">
+                <p>Hi, It's me </p>
+                <h1>Muhammad Rawaha</h1>
+                <h1 id="typing_animation">A Fronted Web Developer</h1>
+
+            </div>
+
+            <div class="info_child info_child2">
+                <img src="./icons/e1.png" alt="">
+            </div>
+
+        </div>
+
+        <div class="detail_container">
+
+            <h1>About Me</h1>
+            
+            <div class="detail_parent">
+                <div class="detail datail_1">
+                    <h2>Hello Everyone,</h2>
+                    <p>I’m not just a frontend developer—I’m a digital architect, a pixel perfectionist, and a code poet. My mission? To turn caffeine into clean, responsive interfaces and ideas into immersive web experiences.</p>
+                </div>
+                
+                <div class="datail detail_2">
+                    <h2>The Art of Code 🎨</h2>
+                    <p>For me, frontend development is where logic meets artistry. HTML is my skeleton, CSS is my paintbrush, and JavaScript is the magic that brings it all to life. I don’t just build websites; I craft digital landscapes where users love to wander.</p>
+                </div>
+
+                <div class="datail detail_3">
+                    <h2>Why Frontend? ❤️</h2>
+                    <p>Because I thrive in the space between "It works!" and "It’s beautiful!"—where functionality dances with aesthetics. I obsess over:</p>
+                    <ul>
+                        <li><strong>Smooth animations</strong> that feel like silk</li>
+                        <li><b>Responsive layouts</b> that adapt like water</li>
+                        <li><b>Clean code</b> that future-me (and others) won’t curse.</li>
+                    </ul>
+                </div>
+
+                <div class="datail detail_4">
+                    <h2>Let’s Build Something Unforgettable 🚀</h2>
+                    <p>I don’t just write code—I solve problems, spark joy, and (occasionally) make browsers behave. Whether you need a sleek portfolio, a blazing-fast app, or just someone to nerd out about CSS Grid with—let’s connect!</p>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <div class="hire_me">
+            <div class="hire_btn_parent"> 
+                <button class="hire_btn">Hire Me</button>
+            </div>
+
+            <p id="hire_para">Or Contact me on</p>
+
+            <div class="hire_links">
+                <div class="box insta" id="insta"><img src="./icons/e4.jpeg" alt="instagram"></div>
+                <div class="box facebook" id="facebook"><img src="./icons/e5.png" alt="facebook"></div>
+                <div class="box linkedin" id="linkedin"><img src="./icons/e7.png" alt="linkedin"></div>
+                <div class="box whatsapp" id="whatsapp"><img src="./icons/e17.png" alt="Whatsapp"></div>
+            </div>
+        </div>
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer-panel panel1">
+                <div class="panel1-item1">
+                    <h2>Products</h2>
+                    <p id="wd-a"><a href="#">Website Designs</a></p>          
+                    <p><a href="#">website Developer</a></p>       
+                    <p><a href="#">website Templates</a></p>
+                </div>
+    
+                <div class="panel1-item1">
+                    <h2>Get in touch</h2>
+                    <p id="wd-a"><a href="#">About me</a></p>          
+                    <p><a href="./contact.html">Contact me</a></p>       
+                    </div>
+            </div>
+            
+            
+            <div class="footer-panel panel2">
+                <p>&COPY; copyright, MR Designs 2024-Now, Inc.</p>
+                <div class="panel2-links">
+                    <a href="./privacy.html" id="panel2-a">Your Privacy</a>
+                    <a href="./privacy.html" id="panel2-a">Your Policy</a>
+                </div>
+            </div>
+        </footer>
+        <!-- END FOOTER -->
+
+
+
+
+
+
+        <script>
+            const toggleBtn = document.querySelector('.menu-btn');
+const toggleBtnIcon = document.querySelector('.menu-btn i');
+const dropDownMenu = document.querySelector('.dropdown_menu');
+
+toggleBtn.onclick = function () {
+dropDownMenu.classList.toggle('open');
+const isOpen = dropDownMenu.classList.contains('open');
+
+toggleBtnIcon.classList = isOpen
+? 'fa-soid fa-xmark'
+: 'fa-soid fa-bars'
+}
+
+
+const btn_1 = document.getElementById('insta');
+const btn_2 = document.getElementById('facebook');
+const btn_3 = document.getElementById('linkedin');
+const btn_4 = document.getElementById('whatsapp');
+
+
+btn_1.addEventListener("click", function() {
+    window.location.href = "https://www.instagram.com/muhammad_rawaha_mr11/?next=%2F";
+});
+
+btn_2.addEventListener("click", function() {
+    window.location.href = "https://www.facebook.com/profile.php?id=100070887822367";
+});
+
+btn_3.addEventListener("click", function() {
+    window.location.href = "https://www.linkedin.com/in/muhammad-rawaha-1ab54b34b/";
+});
+
+btn_4.addEventListener("click", function() {
+    window.location.href = "https://wa.me/+923028053159";
+});
+        </script>
+</body>
+</html>

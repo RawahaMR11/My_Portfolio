@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./contact.css">
+</head>
+<body>
+    <!-- HEADER OF THE PAGE -->
+    <header>
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <img src="./icons/e1.png" width="70px" alt="">
+            </div>
+
+            <ul class="navbar-items">
+                <li><a href="D:\portfolio\index.html">Home</a></li>
+                <!-- <li><a href="#">Work</a></li> -->
+                <li><a href="./project.html">Projects</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <div class="search-bar">
+                <img src="./icons/e3.png" alt="">
+                <input type="search" placeholder="Find here">
+            </div>
+
+            <a href="#" class="action_btn">Book a Project</a>
+
+            <div class="menu-btn">
+                <i class="fa-soid fa-bars"><img src="./icons/e2.png" alt="" width="40px"></i>
+            </div>
+        </nav>
+
+
+        <nav class="dropdown_menu">
+            <ul class="navbar-items">
+                <li><a href="D:\portfolio\index.html">Home</a></li>
+                <!-- <li><a href="#">Work</a></li>               -->
+                <li><a href="./project.html">Projects</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="#" class="action_btn">Book a Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- END HEADER -->
+
+
+
+
+    <main>
+
+        <div class="contact_parent_container">
+            <div class="child child1">
+                <section class="right_section">
+                    <h1>CONTACT ME</h1>
+                    <p>Have any project in your mind! I am here to help you.</p>
+                    <hr>
+                    <section class="link phone"><p>phone :</p> <a href="tel:+923028053159">+92 3028053159</a></section>
+                    <section class="link mail"><p>Mail :</p> <a href="mailto:muhammadrawaha15@gmail.com">muhammadrawaha15@gmail.com</a></section>
+                    <section class="link location"><p>Location :</p> <p id="para1">house: 01, Street: 02, Shams-ul-Qamar town Peshawar</p></section>
+                </section>
+
+                <section class="left_section">
+                    <img src="./image/e1.jpg" alt="">
+                </section>
+            </div>
+
+
+
+            <div class="child child2">
+                <div class="box box1">
+                    <span class="box_child box_img">
+                        <img src="./icons/e21.png" alt="Call">
+                        <p>CALL ME</p>
+                    </span>
+
+                    <span class="box_child box_link">
+                        <a href="tel:+923028053159">+92 302 8053159</a><br>
+                        <a href="tel:+923481832785">+92 348 1832785</a>
+                    </span>
+                </div>
+
+
+                <div class="box box2">
+                    <span class="box_child box_img">
+                        <img src="./icons/e22.png" alt="Location">
+                        <p>LOCATION</p>
+                    </span>
+
+                    <span class="box_child box_link">
+                        <p>House 01, Street 02, Shams-ul-Qamar Town Peshawar</p>
+                    </span>
+                </div>
+
+
+
+                <div class="box box3">
+                    <span class="box_child box_img">
+                        <img src="./icons/e23.png" alt="Time">
+                        <p>TIMING</p>
+                    </span>
+
+                    <span class="box_child box_link">
+                        <p>mon - fri ..... 2pm - 7pm, sat - sun ..... 8am - 1pm</p>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer-panel panel1">
+                <div class="panel1-item1">
+                    <h2>Products</h2>
+                    <p id="wd-a"><a href="#">Website Designs</a></p>          
+                    <p><a href="#">website Developer</a></p>       
+                    <p><a href="#">website Templates</a></p>
+                </div>
+    
+                <div class="panel1-item1">
+                    <h2>Get in touch</h2>
+                    <p id="wd-a"><a href="./about.html">About me</a></p>          
+                    <p><a href="./contact.html">Contact me</a></p>       
+                    </div>
+            </div>
+            
+            
+            <div class="footer-panel panel2">
+                <p>&COPY; copyright, MR Designs 2024-Now, Inc.</p>
+                <div class="panel2-links">
+                    <a href="./privacy.html" id="panel2-a">Your Privacy</a>
+                    <a href="#" id="panel2-a">Your Policy</a>
+                </div>
+            </div>
+        </footer>
+        <!-- END FOOTER -->
+
+
+
+
+
+
+
+
+
+    
+    <script>
+        
+const toggleBtn = document.querySelector('.menu-btn');
+const toggleBtnIcon = document.querySelector('.menu-btn i');
+const dropDownMenu = document.querySelector('.dropdown_menu');
+
+toggleBtn.onclick = function () {
+dropDownMenu.classList.toggle('open');
+const isOpen = dropDownMenu.classList.contains('open');
+
+toggleBtnIcon.classList = isOpen
+? 'fa-soid fa-xmark'
+: 'fa-soid fa-bars'
+}
+
+    </script>
+</body>
+</html>
